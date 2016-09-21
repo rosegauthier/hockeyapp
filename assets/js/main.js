@@ -140,7 +140,7 @@ hockeyApp.teams = [
 		'name':'New York Rangers',
 		'abbrev': 'NYR',
 		'shortName': 'Rangers',
-		'baseColor': '#0161AB',
+		'baseColor': '#003279',
 		'accentColor': '#E51837'
 	},
 	{
@@ -175,8 +175,8 @@ hockeyApp.teams = [
 		'name':'St Louis Blues',
 		'abbrev': 'STL',
 		'shortName': 'Blues',
-		'baseColor': '#004F30',
-		'accentColor': '#EEE3C7'
+		'baseColor': '#00529C',
+		'accentColor': '#FDB930'
 	},
 	{
 		'name': 'Tampa Bay Lightning',
@@ -216,8 +216,15 @@ hockeyApp.teams = [
 ]
 
 hockeyApp.worldCup = [
-	['Patrice Bergeron', 'Logan Couture', 'Sidney Crosby', 'Matt Duchene', 'Ryan Getzlaf', 'Claude Giroux', 'Brad Marchand', 'Corey Perry', 'Tyler Seguin', 'Steven Stamkos', 'John Tavares', 'Jonathan Toews', 'Joe Thornton'],
-	[]
+	['Team Canada', 'Patrice Bergeron', 'Logan Couture', 'Sidney Crosby', 'Matt Duchene', 'Ryan Getzlaf', 'Claude Giroux', 'Brad Marchand', 'Corey Perry', 'Tyler Seguin', 'Steven Stamkos', 'John Tavares', 'Jonathan Toews', 'Joe Thornton', 'Jay Bouwmeester', 'Brent Burns', 'Drew Doughty', 'Jake Muzzin', 'Alex Pietrangelo', 'Marc-Edouard Vlasic', 'Shea Weber', 'Corey Crawford', 'Braden Holtby', 'Carey Price'],
+	['Team N. America', 'Sean Couturier', 'Jonathan Drouin', 'Jack Eichel', 'Johnny Gaudreau', 'Dylan Larkin', 'Nathan MacKinnon', 'Auston Matthews', 'Connor McDavid', 'J.T. Miller', 'Ryan Nugent-Hopkins', 'Brandon Saad', 'Mark Scheifele', 'Vincent Trocheck', 'Aaron Ekblad', 'Shayne Gostisbehere', 'Seth Jones', 'Ryan Murray', 'Colton Parayko', 'Morgan Rielly', 'Jacob Trouba', 'John Gibson', 'Connor Hellebuyck', 'Matt Murray'],
+	['Team USA', 'Justin Abdelkader', 'David Backes', 'Brandon Dubinsky', 'Patrick Kane', 'Ryan Kesler', 'T.J. Oshie', 'Max Pacioretty', 'Kyle Palmieri', 'Zach Parise', 'Joe Pavelski', 'Derek Stepan', 'James van Riemsdyk', 'Blake Wheeler', 'Dustin Byfuglien', 'John Carlson', 'Erik Johnson', 'Jack Johnson', 'Ryan McDonagh', 'Matt Niskanen', 'Ryan Suter', 'Ben Bishop', 'Jonathan Quick', 'Cory Schneider'],
+	['Team Europe', 'Pierre-Edouard Bellemare', 'Mikkel Boedker', 'Leon Draisaitl', 'Marian Gaborik', 'Jannik Hansen', 'Marian Hossa', 'Anze Kopitar', 'Nino Niederreiter', 'Frans Nielsen', 'Tobias Rieder', 'Tomas Tatar', 'Thomas Vanek', 'Mats Zuccarello', 'Zdeno Chara', 'Christian Ehrhoff', 'Roman Josi', 'Luca Sbisa', 'Dennis Seidenberg', 'Andrej Sekera', 'Mark Streit', 'Thomas Greiss', 'Philipp Grubauer', 'Jaroslav Halak'],
+	['Team Sweden', 'Mikael Backlund', 'Nicklas Backstrom', 'Loui Eriksson', 'Filip Forsberg', 'Carl Hagelin', 'Patric Hornqvist', 'Marcus Kruger', 'Gabriel Landeskog', 'Patrik Berglund', 'Daniel Sedin', 'Henrik Sedin', 'Jakob Silfverberg', 'Carl Soderberg', 'Mattias Ekholm', 'Oliver Ekman-Larsson', 'Victor Hedman', 'Niklas Hjalmarsson', 'Erik Karlsson', 'Hampus Lindholm', 'Anton Stralman', 'Jhonas Enroth', 'Henrik Lundqvist', 'Jacob Markstrom'],
+	['Team Russia', 'Artem Anisimov', 'Evgeny Dadonov', 'Pavel Datsyuk', 'Nikita Kucherov', 'Nikolay Kulemin', 'Evgeny Kuznetsov', 'Evgeni Malkin', 'Vladislav Namestnikov', 'Alex Ovechkin', 'Artemi Panarin', 'Vadim Shipachyov', 'Vladimir Tarasenko', 'Ivan Telegin', 'Alexei Emelin', 'Dmitry Kulikov', 'Alexey Marchenko', 'Andrei Markov', 'Dmitry Orlov', 'Nikita Zaitsev', 'Sergei Bobrovsky', 'Semyon Varlamov', 'Andrei Vasilevskiy'],
+	['Team Czech Republic', 'Michal Birner', 'Roman Cervenka', 'Radek Faksa', 'Michael Frolik', 'Martin Hanzal', 'Ales Hemsky', 'Dmitrij Jaskin', 'David Krejci', 'Milan Michalek', 'Ondrej Palat', 'David Pastrnak', 'Tomas Plekanec', 'Vladimir Sobotka', 'Jakub Voracek', 'Michal Jordan', 'Michal Kempny', 'Tomas Kundratek', 'Zbynek Michalek', 'Jakub Nakladal', 'Roman Polak', 'Andrej Sustr', 'Petr Mrazek', 'Michal Neuvirth', 'Ondrej Pavelec'],
+	['Team Finland', 'Sebastian Aho', 'Aleksander Barkov', 'Joonas Donskoi', 'Valtteri Filppula', 'Mikael Granlund', 'Erik Haula', 'Jussi Jokinen', 'Mikko Koivu', 'Leo Komarov', 'Lauri Korpikoski', 'Patrik Laine', 'Jori Lehtera', 'Teuvo Teravainen', 'Jyrki Jokipakka', 'Sami Lepisto', 'Esa Lindell', 'Olli Maatta', 'Ville Pokka', 'Rasmus Ristolainen', 'Sami Vatanen', 'Mikko Koskinen', 'Tuukka Rask', 'Pekka Rinne']
+
 ];
 // console.log(hockeyApp.teams)
 
@@ -293,27 +300,8 @@ hockeyApp.getPlayerDetails = function(team) {
 		}).then(function() {
 			hockeyApp.matchReturnData(hockeyApp.playerDetails, hockeyApp.fullTeamArray)
 		});
-		// hockeyApp.matchReturnData(hockeyApp.playerDetails, hockeyApp.fullTeamArray).then(function() {
-		// 	hockeyApp.geocodePlayers(hockeyApp.playerDetails).then(function (geocodedPlayers) {
-		// 		// !!!! what does this do?
-		// 		hockeyApp.geocodedPlayers = geocodedPlayers;
-		// 	})
-		// });
-		// combine personal info and statistics of each player into one object
-		// hockeyApp.matchReturnData(hockeyApp.playerDetails, hockeyApp.fullTeamArray);
 	});
 };
-
-// !!!! don't need this, I changed it to radio buttons!
-// take user input and retrieve abbreviation to be passed into API call
-// hockeyApp.getAbbrev = function(input) {
-// 	selectedTeam = hockeyApp.teams.filter(function(value) {
-// 		return value.name == input;
-// 	});
-// 	var teamAbbrev = selectedTeam[0].abbrev;
-// 	hockeyApp.getPlayerStats(teamAbbrev);
-// 	hockeyApp.customIcon(teamAbbrev);
-// };
 
 hockeyApp.stringToArray = function(string) {
 	return string.replace(/\s/g, '').split(',');
@@ -354,14 +342,15 @@ hockeyApp.renameKey = function(obj, oldName, newName) {
 
 hockeyApp.geocodePlayers = function(playersArray) {
 	return Promise.all(playersArray.map(function(player) {
-
+		//geocoding API was putting some Canadian players in southern states. Regex to make it more clear for API. Reverse immediately after
+		player.birthplace = player.birthplace.replace('CAN', 'Canada');
 		return new Promise(function (resolve, reject) {
 			hockeyApp.getPlayerLocations(player.birthplace).then(function(playerLocations) {
 			// flatten multiple nested arrays from geocode API to make it easier to map
 				player.coords = $.map(playerLocations, function recurs(n) {
 				    return ($.isArray(n) ? $.map(n, recurs): n);
 				});
-
+				player.birthplace = player.birthplace.replace('Canada', 'CAN');
 				resolve(player);
 		    });
 		});
@@ -383,16 +372,15 @@ hockeyApp.matchReturnData = function(playerDetails, fullTeamArray) {
 	})
 	hockeyApp.playerResult.forEach(function(player){
 		// console.log(player.item1.coords);
-		hockeyApp.plotPlayerLocations(player);
 		hockeyApp.findWorldCup(player);
+		hockeyApp.plotPlayerLocations(player);
 	});
 };
 
 hockeyApp.findWorldCup = function(player) {
-	console.log(player);
 	hockeyApp.worldCup.forEach(function(team) {
 		if( team.includes(player.item1.name) ) {
-			player.item1.wcTeam = team;
+			player.item1.wcTeam = team[0];
 		}
 	});
 }
@@ -405,23 +393,6 @@ hockeyApp.findWorldCup = function(player) {
 
 // console.log(hockeyApp.geocodedArray);
 
-// hockeyApp.getPlayerLocations = function(birthplace) {
-// 	$.ajax({
-// 		url: hockeyApp.geoUrl,
-// 		method: 'GET',
-// 		inFormat: 'json',
-// 		data: {
-// 			key: hockeyApp.geoKey,
-// 			location: birthplace
-// 		}
-// 	}).then(function(playerLocations) {
-// 		return playerLocations.results.map(function(result) {
-// 		    return result.locations.map(function(location) {
-// 		    	return [location.latLng.lat, location.latLng.lng];
-// 		    });
-// 		});
-// 	});
-// };
 
  // hockeyApp.getPlayerLocations = function(birthplace) {
  // return Promise.resolve($.ajax({
@@ -475,6 +446,8 @@ hockeyApp.plotPlayerLocations = function(player) {
 	var coords = player.item1.coords;
 	var id = player.item1.id;
 	var position = player.item1.position;
+	var wcTeam = player.item1.wcTeam;
+
 	var template = `<div class="player-image">
 				 		<img src="http://3.cdn.nhle.com/photos/mugs/${id}.jpg" alt="" />
 				 	</div>
@@ -482,8 +455,9 @@ hockeyApp.plotPlayerLocations = function(player) {
 						<div class="player">${name}</div>
 						<div class="position">${position}</div>
 					 	<div class="hometown">${birthplace}</div>
+					 	<div class="wc-team">${wcTeam || ''}</div>
 					 </div>`;
-
+console.log(wcTeam);
 	if(position === 'Goalie') {
 		console.log(player)
 		template = `${template}<div class="player-stats clearfix">
@@ -532,7 +506,7 @@ hockeyApp.stopLoading = function() {
 hockeyApp.scrollTo = function(elementId, offset, duration) {
 	$('html, body').animate({
 	    scrollTop: $("#mapid").offset().top
-	}, 2000);
+	}, 1500);
 };
 
 //map presets
@@ -575,7 +549,6 @@ hockeyApp.init = function() {
 		$('.loader img').show();
 		hockeyApp.startLoading();
 		chosenTeam = $(this).val();
-		// hockeyApp.getAbbrev(chosenTeam);
 		hockeyApp.getPlayerStats(chosenTeam);
 		hockeyApp.customIcon(chosenTeam);
 	});
